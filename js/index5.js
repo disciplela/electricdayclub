@@ -32,17 +32,17 @@ var x = setInterval(function() {
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    //Rewrite to div elements to display birthday message
-        // var days = document.getElementById("days");
-        // var seconds = document.getElementById("seconds");
-        // var minutes = document.getElementById("minutes");
-        // var hours = document.getElementById("hours");
-        // days.style.display="none";
-        // seconds.style.display="none";
-        // minutes.style.display="none";
-        // hours.style.fontSize="2.9rem";
-        // hours.style.fontFamily="Allura-Regular";
-        // hours.innerHTML="🍾🎉 Happy Birthday Jen! 🎉🍾";
+    //Rewrite to div elements to display message
+        var days = document.getElementById("days");
+        var seconds = document.getElementById("seconds");
+        var minutes = document.getElementById("minutes");
+        var hours = document.getElementById("hours");
+        days.style.display="none";
+        seconds.style.display="none";
+        minutes.style.display="none";
+        hours.style.fontSize="2.9rem";
+        hours.style.fontFamily="Allura-Regular";
+        hours.innerHTML="🍾🎉 Happy Birthday Rene! 🎉🍾";
   }
 }, 1000);
 
