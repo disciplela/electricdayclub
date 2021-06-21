@@ -41,8 +41,8 @@ var x = setInterval(function() {
         seconds.style.display="none";
         minutes.style.display="none";
         hours.style.fontSize="2.9rem";
-        hours.style.fontFamily="Allura-Regular";
-        hours.innerHTML="🍾🎉 Happy Birthday Rene! 🎉🍾";
+        hours.style.fontFamily="Courier";
+        hours.innerHTML="electric_day_club @ instagram";
   }
 }, 1000);
 
