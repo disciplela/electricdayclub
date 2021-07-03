@@ -1,17 +1,15 @@
 // Play Random Video
 let n = Math.floor(Math.random() * 5) + 1;
 function playRandomHeader() {
-
-  document.querySelector("video").src = "public/videos/VIDEO" + n + ".mp4";
+  document.querySelector('video').src = 'public/videos/VIDEO' + n + '.mp4';
 }
 
 //Timer Function
 // Set the date we're counting down to
-var countDownDate = new Date("June 19, 2021 15:00:00").getTime();
+var countDownDate = new Date('July 10, 2021 15:00:00').getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
-
+var x = setInterval(function () {
   // Get today's date and time
   var now = new Date().getTime();
   // Find the distance between now and the count down date
@@ -24,38 +22,38 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("days").innerHTML = days + 'd';
-  document.getElementById("hours").innerHTML = hours + 'h';
-  document.getElementById("minutes").innerHTML = minutes + 'm';
-  document.getElementById("seconds").innerHTML = seconds + 's';
+  document.getElementById('days').innerHTML = days + 'd';
+  document.getElementById('hours').innerHTML = hours + 'h';
+  document.getElementById('minutes').innerHTML = minutes + 'm';
+  document.getElementById('seconds').innerHTML = seconds + 's';
 
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
     //Rewrite to div elements to display message
-        var days = document.getElementById("days");
-        var seconds = document.getElementById("seconds");
-        var minutes = document.getElementById("minutes");
-        var hours = document.getElementById("hours");
-        days.style.display="none";
-        seconds.style.display="none";
-        minutes.style.display="none";
-        hours.style.fontSize="2.9rem";
-        hours.style.fontFamily="Courier";
-        hours.innerHTML="electric_day_club @ instagram";
+    var days = document.getElementById('days');
+    var seconds = document.getElementById('seconds');
+    var minutes = document.getElementById('minutes');
+    var hours = document.getElementById('hours');
+    days.style.display = 'none';
+    seconds.style.display = 'none';
+    minutes.style.display = 'none';
+    hours.style.fontSize = '2.9rem';
+    hours.style.fontFamily = 'Courier';
+    hours.innerHTML = 'electric_day_club @ instagram';
   }
 }, 1000);
 
 // Overlay Timer toggle functions
 
 function on() {
-  document.getElementById("electricFlyerOverlay").style.display = "block";
+  document.getElementById('electricFlyerOverlay').style.display = 'block';
 }
 
 function off() {
-  document.getElementById("electricFlyerOverlay").style.display = "none";
+  document.getElementById('electricFlyerOverlay').style.display = 'none';
 }
 
-function submit(){
-  document.getElementById("tix").innerText="Let's Fuckin' Get It!";
+function submit() {
+  document.getElementById('tix').innerText = "Let's Fuckin' Get It!";
 }
