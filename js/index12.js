@@ -11,7 +11,7 @@ var countDownDate2 = new Date('August 14, 2021 15:00:00').getTime();
 var countDownDate3 = new Date('September 25, 2021 15:00:00').getTime();
 let currentDay = new Date().getTime();
 
-//Update new countdown date and innerHTML for Action Button
+//Update new countdown date and innerHTML for Button
 
 if (countDownDate < currentDay) {
   countDownDate = countDownDate2;
