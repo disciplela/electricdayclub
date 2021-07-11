@@ -1,4 +1,4 @@
-// Play Random Video
+// Header randomization
 let n = Math.floor(Math.random() * 5) + 1;
 function playRandomHeader() {
   document.querySelector('video').src = 'public/videos/VIDEO' + n + '.mp4';
@@ -6,7 +6,21 @@ function playRandomHeader() {
 
 //Timer Function
 // Set the date we're counting down to
-var countDownDate = new Date('July 10, 2021 15:00:00').getTime();
+var countDownDate = new Date('July 1, 2021 15:00:00').getTime();
+var countDownDate2 = new Date('August 14, 2021 15:00:00').getTime();
+var countDownDate3 = new Date('September 25, 2021 15:00:00').getTime();
+let currentDay = new Date().getTime();
+
+//Update new countdown date and innerHTML for Action Button
+
+if (countDownDate < currentDay) {
+  countDownDate = countDownDate2;
+  document.links[0].href = 'https://www.instagram.com/electric_day_club/';
+}
+if (currentDay > countDownDate2) {
+  countDownDate = countDownDate3;
+  document.links[0].href = 'https://www.instagram.com/electric_day_club/';
+}
 
 // Update the count down every 1 second
 var x = setInterval(function () {
